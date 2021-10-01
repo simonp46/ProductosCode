@@ -11,4 +11,9 @@ class CrudModel extends Model
         $consulta = $this->db->query("SELECT * FROM tProductos");
         return $consulta->getResult();
     }
+    public function agregar()
+    {
+        print_r ($_POST);
+    }
 }
+?>

@@ -15,4 +15,8 @@ class Home extends BaseController
         ];
         return view('index',$dato);
     }
+    public function guardar()
+    {
+        print_r($_POST);
+    }
 }
