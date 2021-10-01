@@ -16,7 +16,7 @@
             <div class="col-md-3">
                 <h1>Productos</h1>
                 <form action="<?php echo base_url().'/guardar' ?>" method="POST">
-                    <input type="number" class="form-control mb-3" name="Identificaion" id="Identificacion" placeholder="Codigo del producto">
+                    <input type="number" class="form-control mb-3" name="identificacion" id="identificacion" placeholder="Codigo del producto">
                     <input type="text" class="form-control mb-3" name="name" id="name" placeholder="Nombre del producto">
                     <input type="text" class="form-control mb-3" name="description" id="description" placeholder="descripcion del producto">
                     <input type="number" class="form-control mb-3" name="price" id="price" placeholder="Precio del producto">
