@@ -17,5 +17,11 @@ class CrudModel extends Model
         $data->insert($datos);
         return $this->db->insertID();
     }
+    public function eliminar($identificacion)
+    {
+        $Eliminar = $this->db->table('tproductos');
+        $Eliminar->where($identificacion);
+        return $Eliminar->delete();
+    }
 }
 ?>

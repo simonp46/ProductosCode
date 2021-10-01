@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->post('/guardar', 'Home::guardar');
+$routes->get('/Eliminar/(:any)', 'Home::Eliminar/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

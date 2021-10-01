@@ -26,11 +26,24 @@ class Home extends BaseController
 
         $crud= new CrudModel();
         $respuesta= $crud->insertar($datos);
-
+//mostrar codigo de producto al pararce en eliminar
         if ($respuesta > 0) {
             return redirect()->to(base_url().'/')->with('mensaje','1');
         } else {
             return redirect()->to(base_url().'/')->with('mensaje','0');
+        }
+    }
+    public function eliminar($identificacion)
+    {
+        $crud = new CrudModel();
+        $data = ["IdProducto" => $identificacion];
+
+        $respuesta = $crud->eliminar($data);
+
+        if ($respuesta) {
+            return redirect()->to(base_url().'/')->with('mensaje','4');
+        } else {
+            return redirect()->to(base_url().'/')->with('mensaje','5');
         }
     }
 }

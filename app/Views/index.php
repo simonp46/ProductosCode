@@ -42,8 +42,8 @@
                             <td><?php echo $key->Nombre ?></td>
                             <td><?php echo $key->Descripcion ?></td>
                             <td><?php echo $key->VlrUnidad ?></td>
-                            <td><button type="submit"class="btn btn-primary" value="Editar" name="Editar">Editar</button></td>
-                            <td><button type="submit"class="btn btn-danger" value="Eliminar" name="Eliminar">Eliminar</button></td>
+                            <td><button href="" type="submit"class="btn btn-primary" value="Editar" name="Editar">Editar</button></td>
+                            <td><a href="<?php echo base_url().'/Eliminar/'.$key->IdProducto ?>" class="btn btn-danger">Eliminar</a></td>
                         </tr>
                         <?php endforeach;?>
                     </tbody>
